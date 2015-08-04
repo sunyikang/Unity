@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="gb2312"?>
+<root>
+<sentence name="Julee" AutoOff="false" AutoPlay="true">
+<time> 2</time>
+<content >welcome to this training system ,I am Julee 
+     your personal trainer </content>
+<action >test</action>  
+</sentence>
+
+<sentence name ="Julee" AutoOff="false" AutoPlay="true">
+<time> 2 </time>
+<content >Press WASD for movement ,Press ESC to call Menue </content>
+<action object="cube">ShowIn_Obj</action>  
+</sentence>
+
+<sentence name ="Julee" AutoOff="false" AutoPlay="false">
+<time> 2 </time>
+<content >well done ,
+ now you can explore the platform</content>
+<action ></action>  
+</sentence>
+
+<sentence name ="Julee" AutoOff="true" AutoPlay="false">
+<time> 2 </time>
+<content >well done ,
+ remember to check detail by pressing ESC</content>
+<action></action>  
+</sentence>
+
+</root>

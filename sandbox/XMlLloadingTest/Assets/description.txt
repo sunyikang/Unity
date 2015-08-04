@@ -1,0 +1,8 @@
+测试场景文件  在assets 文件夹下的 xmloading.scn
+因为担心scirpt之间有引用所以没敢删干净其他的scripts
+
+测试场景文件里gameobject 上挂载了一个delegateTest ，这个里面主要是测试把动作命令作为string变量去控制函数执行。
+相关的另一个scripts在 resource文件夹下的gamecenter里的 missionContent ， 这个用了singleton 泛型模式 ，这个script里的代码就是下午我发给你的那段
+主要用来创建委托和字典 。
+
+目前整个代码都是用string参数 所以能执行，unity控制台能看到输出结果。 但是只要添加int型参数的函数就不行了。
