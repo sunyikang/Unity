@@ -8,7 +8,7 @@ public class test : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		_color=this.renderer.material.color;
+		_color=this.GetComponent<Renderer>().material.color;
 		_color.a=0f;
 	}
 	
@@ -24,7 +24,7 @@ public class test : MonoBehaviour {
 	}
 	void ShowIn(){
 
-		_color=this.renderer.material.color;
+		_color=this.GetComponent<Renderer>().material.color;
 		_color.a=0.5f;
 
 	}

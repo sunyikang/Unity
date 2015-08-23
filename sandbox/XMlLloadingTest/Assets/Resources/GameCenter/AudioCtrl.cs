@@ -80,7 +80,7 @@ public class AudioCtrl : Singleton<AudioCtrl> {
 		source.minDistance=minDistance;
 		source.maxDistance=maxDistance;
 		source.pitch = pitch; 
-		source.audio.loop=loop;
+		source.GetComponent<AudioSource>().loop=loop;
 		source.Play (); 
 		if(!loop){
 		Destroy (go, clip.length); 
@@ -108,7 +108,7 @@ public class AudioCtrl : Singleton<AudioCtrl> {
 		source.minDistance=minDistance;
 		source.maxDistance=maxDistance;
 		source.pitch = pitch; 
-		source.audio.loop=loop;
+		source.GetComponent<AudioSource>().loop=loop;
 		source.Play(); 
 		if(!loop){
 		Destroy(go, clip.length); 

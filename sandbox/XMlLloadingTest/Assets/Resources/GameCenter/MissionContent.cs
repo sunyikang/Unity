@@ -7,19 +7,24 @@ using System.Collections.Generic;
 
 using System.Xml;
 
+// YIKANG ADD
+
 public class MissionContent: Singleton<MissionContent>  {
 
 	//public delegate void   ActionDelegate<T>(T item );有错误
 
 	//public  Dictionary <string ,ActionDelegate<T>> actionDictionary = new Dictionary <string,ActionDelegate<T>>();有错误
 
+
+
+
 	public delegate void   ActionDelegate(string item );
 	public  Dictionary <string ,ActionDelegate> actionDictionary = new Dictionary <string,ActionDelegate>();
 	void Awake()  {
 		//actionDictionary.Add("test",test);
 		//actionDictionary.Add("haha",haha);
-		actionDictionary["test"]=test;
-		actionDictionary["haha"]=haha;
+		//actionDictionary["test"]=test;
+		//actionDictionary["haha"]=haha;
 	}
 
 	void Update () {

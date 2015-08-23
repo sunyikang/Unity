@@ -6,29 +6,29 @@ class CameraMotionBlurEditor extends Editor
 {	
 	var serObj : SerializedObject;	
 		
-  var filterType : SerializedProperty;
-  var preview : SerializedProperty;
-  var previewScale : SerializedProperty;
-  var movementScale : SerializedProperty;
-  var jitter : SerializedProperty;
-  var rotationScale : SerializedProperty;
-  var maxVelocity : SerializedProperty;
-  var minVelocity : SerializedProperty;
-  var maxNumSamples : SerializedProperty;
-  var velocityScale : SerializedProperty;
-  var velocityDownsample : SerializedProperty;
-  var noiseTexture : SerializedProperty;
-  var showVelocity : SerializedProperty;
-  var showVelocityScale : SerializedProperty;
-  var excludeLayers : SerializedProperty;
-  //var dynamicLayers : SerializedProperty;
+	var filterType : SerializedProperty;
+	var preview2 : SerializedProperty;
+	var previewScale : SerializedProperty;
+	var movementScale : SerializedProperty;
+	var jitter : SerializedProperty;
+	var rotationScale : SerializedProperty;
+	var maxVelocity : SerializedProperty;
+	var minVelocity : SerializedProperty;
+	var maxNumSamples : SerializedProperty;
+	var velocityScale : SerializedProperty;
+	var velocityDownsample : SerializedProperty;
+	var noiseTexture : SerializedProperty;
+	var showVelocity : SerializedProperty;
+	var showVelocityScale : SerializedProperty;
+	var excludeLayers : SerializedProperty;
+	//var dynamicLayers : SerializedProperty;
 
 	function OnEnable () {
 		serObj = new SerializedObject (target);
 		
     filterType = serObj.FindProperty ("filterType");
 
-    preview = serObj.FindProperty ("preview");
+    preview2= serObj.FindProperty ("preview");
     previewScale = serObj.FindProperty ("previewScale");
 
     movementScale = serObj.FindProperty ("movementScale");
@@ -89,10 +89,11 @@ class CameraMotionBlurEditor extends Editor
 
     EditorGUILayout.Separator ();
 
-    EditorGUILayout.PropertyField (preview, new GUIContent("Preview"));
-    if (preview.boolValue)
+    EditorGUILayout.PropertyField (preview2, new GUIContent("Preview"));
+    if (preview2.boolValue)
       EditorGUILayout.PropertyField (previewScale, new GUIContent(""));    
         	
     serObj.ApplyModifiedProperties();
     }
+    
 }
